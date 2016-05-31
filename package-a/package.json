@@ -1,0 +1,20 @@
+{
+  "name": "package-a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "npm run clean_build && tsc",
+    "build_test": "npm run clean_test && tsc --project ./test/src --pretty",
+    "clean_build": "rm -rf lib",
+    "clean_test": "rm -rf test/lib",
+    "test": "npm run build_test && mocha ./test/lib/ --recursive && npm run clean_test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "typescript": "^1.9.0-dev.20160531-1.0"
+  }
+}

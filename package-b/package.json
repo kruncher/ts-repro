@@ -1,0 +1,19 @@
+{
+  "name": "package-b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/setup.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "npm run clean_build && tsc",
+    "clean_build": "rm -rf lib"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nunjucks": "^2.4.2"
+  },
+  "devDependencies": {
+    "typescript": "^1.9.0-dev.20160531-1.0"
+  }
+}
