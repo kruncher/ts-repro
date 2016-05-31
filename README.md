@@ -20,6 +20,9 @@ npm install
 
 # Attempt to build and run unit tests of package-a
 npm test
+
+# Verify that package-a works normally by running it
+node .
 ```
 
 # Error Output
